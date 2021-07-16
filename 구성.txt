@@ -1,0 +1,40 @@
+1. 제목과 팀
+2. 동기
+3. 사용해서 얻는 output
+4. 목차
+5(1). 요구사항
+ 메뉴는 하루 6가지로 한정
+ 식사시간은 점심시간에 운영
+ 회원당 하나의 QR코드를 가진다
+ QR코드는 당일의 구매 목록(수량)이 나타난다
+ 페이지 사용 시 관리자가 입력한 회사로만 가입이 가능하다
+ 회원탈퇴 시 DB내 존재하는 QR코드 목록과 구매 목록은 삭제된다
+6(2). 전체구성
+ 6.1 페이지
+ 6.2 테이블
+7(3). DB설계도면
+8(4). 화면설계 (각자)
+9(5). cic-selab 연결 설명
+10(6). 각자 역할 및 경험담
+ 설세형 DB TOPIC, 영어발표, 가입 및 로그인 
+        HTML및 PHP등 웹 구성 초행
+ 정민우 DB TOPIC, PPT, 메인, admin(메뉴, 회원)
+        Mysql-Oracle차이        
+ 진호용 DB TOPIC, DB제작, Userorder page(전체구성), admin(주문)
+        DB설계시 제약조건 설정
+ 최봉근 DB TOPIC, QR 설계 및 제작, User mypage 
+        QR코드 이미지 저장
+11(7). 결론 (부족 및 아쉬웠던점)
+ 챗봇 사용 여부
+ 결제 시스템 연동
+ DB 관리자의 권한 부족
+ 
+오라클
+ $result = oci_parse($conn, $query);
+           oci_execute($result);
+           for($i=0;$array = oci_fetch_array($result);$i++)
+oci부분 컬럼속성 대문자
+
+parse sql문 분석, 실행계획 생성
+excute aql문 실행
+fetch 불러들인 블럭에서 원하는 결과값(row)찾음
